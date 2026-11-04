@@ -10,5 +10,5 @@ identity_check() { # 应用自己的 OIDC 端点走完登录，再调自己的�
     { echo "OIDC 登录链失败"; return 1; }
   me="$(web_get '/api/users?username=self' -H 'Accept: application/json')" || { echo "GET /api/users?username=self 失败：$me"; return 1; }
   jq -e --arg u "$SMOKE_OWNER" '.username == $u and .permissions.admin == true' <<<"$me" >/dev/null ||
-    { echo "当前用户不是主人管理员：$me"; return 1; }
+    { echo "当前用户不是用户管理员：$me"; return 1; }
 }
