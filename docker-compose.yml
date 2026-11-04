@@ -136,7 +136,7 @@ configs:
 x-wonton:
   spec: "0.4"
   id: org.filebrowser.quantum
-  version: 0.1.1
+  version: 0.1.2
   kind: app
   title: { en: File Browser }
   description:
@@ -161,10 +161,15 @@ x-wonton:
       Browse the shared folders in a web page: preview images, play videos and music, read documents, upload, download, rename, move and download folders as archives.
 
       It opens straight into your own files, with no extra password.
-  release_notes: { zh: 名字和说明更新。, en: Product name and description update. }
+  release_notes:
+    zh: 打开插件直接进入文件页，不用再点一次登录按钮。
+    en: Opens straight into your files, no extra login click.
   webui:
     service: filebrowser
     port: 80
+    # 上游没有"自动跳转 OIDC"的配置，入口直接指到它的 OIDC 起点端点（302 到身份提供方），
+    # 登录页不再要多点一下。退出登录落在登录页，需要时再经此端点登录。
+    path: /api/auth/oidc/login
     sso: oidc
     oidc:
       redirect_paths: [/api/auth/oidc/callback]
