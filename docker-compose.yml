@@ -136,7 +136,7 @@ configs:
 x-wonton:
   spec: "0.4"
   id: org.filebrowser.quantum
-  version: 0.1.2
+  version: 0.1.3
   kind: app
   title: { en: File Browser }
   description:
@@ -162,8 +162,8 @@ x-wonton:
 
       It opens straight into your own files, with no extra password.
   release_notes:
-    zh: 打开插件直接进入文件页，不用再点一次登录按钮。
-    en: Opens straight into your files, no extra login click.
+    zh: 健康检查区分缓存目录缺失、类型错误和读写权限错误，并记录运行身份及目录属主、权限；存储不可用时仍判定为不健康。
+    en: Health checks distinguish missing cache paths, wrong path types and permission errors, and report the runtime identity and directory ownership/mode. Unusable storage still fails the check.
   webui:
     service: filebrowser
     port: 80
