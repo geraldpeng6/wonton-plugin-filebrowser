@@ -5,6 +5,9 @@
 [FileBrowser Quantum](https://github.com/gtsteffaniak/filebrowser) 的云吞插件：用户在 App 里浏览、预览、上传、
 下载、整理共享文件夹里的文件。
 
+用 Quantum 分支而不是原版 [filebrowser/filebrowser](https://github.com/filebrowser/filebrowser)：原版 2026-09-01 归档，不再发版和修安全问题，
+也没有 OIDC 登录；Quantum 在持续发版，自带 OIDC，能把多个共享文件夹各作为一个源。
+
 ## 插件行为
 
 - 登录用 `sso: oidc`：由核心的身份提供方登录，打开插件网页就是当前用户的文件页，不需要再登录一次。
