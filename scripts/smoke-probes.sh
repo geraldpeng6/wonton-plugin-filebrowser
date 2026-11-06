@@ -1,6 +1,5 @@
+# shellcheck shell=bash
 # FileBrowser Quantum：sso=oidc；清单没有 mcp。
-SSO=oidc
-MCP=0
 
 web_assert() { grep -qi 'filebrowser'; }   # 标准输入：应用真实页面
 
