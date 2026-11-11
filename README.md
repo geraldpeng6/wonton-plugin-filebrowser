@@ -1,6 +1,6 @@
 # 云吞插件：FileBrowser Quantum
 
-开发流程见[插件开发指南](https://github.com/geraldpeng6/wonton-docs/blob/main/develop.md)。
+开发流程见[插件开发指南](https://github.com/wontonapp/wonton-docs/blob/main/develop.md)。
 
 [FileBrowser Quantum](https://github.com/gtsteffaniak/filebrowser) 的云吞插件：用户在 App 里浏览、预览、上传、
 下载、整理共享文件夹里的文件。
