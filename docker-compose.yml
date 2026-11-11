@@ -138,10 +138,10 @@ x-wonton:
   id: org.filebrowser.quantum
   version: 0.1.3
   kind: app
-  title: { en: File Browser }
+  title: { zh: 网页文件管理器（File Browser）, en: Web File Manager (File Browser) }
   description:
-    zh: 在网页上浏览、预览、上传、下载和整理文件
-    en: Browse, preview, upload, download and organize files in your browser
+    zh: 像电脑上的文件夹窗口搬进了网页：翻看家里的共享文件夹，照片视频直接预览，上传、下载、改名、移动都能做。最轻巧，打开就是你的文件。
+    en: "Your computer's folder window, in a browser: go through the shared folders on your home server, preview photos and videos, and upload, download, rename or move files. The lightest option — it opens straight to your files."
   icon: icon.png
   notices: [NOTICE]
   screenshots: [screenshots/files.png, screenshots/photos.png, screenshots/preview.png, screenshots/upload.png, screenshots/transfers.png]
